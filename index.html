@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>פרופיל מקצועי | QA Automation Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+    <!-- Header / Navbar -->
+    <header class="header">
+      <div class="logo">DevProfile<span>.</span></div>
+      <button id="themeToggle" class="theme-toggle" aria-label="החלף מצב תצוגה">
+        <span class="icon">🌙</span>
+        <span class="theme-text">מצב כהה</span>
+      </button>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero / Profile Section -->
+      <section class="profile-hero card">
+        <div class="avatar-wrapper">
+          <img
+            src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/699a/live/3106b250-01ef-11f1-bb50-17f4fe9ab2e3.jpg.webp"
+            alt="תמונת פרופיל" class="profile-img" />
+          <div class="status-badge" title="זמין להצעות עבודה"></div>
+        </div>
+        <h1 class="name">ישראל ישראלי</h1>
+        <p class="title">QA & Automation Engineer | Python Developer</p>
+
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn github">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section with Dynamic Expand/Collapse -->
+      <section class="about-section card">
+        <h2>אודות</h2>
+        <p class="about-summary">
+          מהנדס אוטומציה ובדיקות תוכנה מנוסה עם תשוקה לאופטימיזציה של תהליכי פיתוח, כתיבת סקריפטים אוטומטיים ב-Python,
+          ובניית סביבות CI/CD יציבות ומדויקות.
+        </p>
+        <div id="moreAbout" class="more-content hidden">
+          <p>
+            בעל ניסיון נרחב בבדיקות API (REST), בדיקות UI מקצה לקצה (Selenium / Playwright), עבודה מול מאגרי נתונים
+            SQL/NoSQL, ועיבוד נתונים אוטומטי מקובצי JSON ו-CSV.
+            מתמחה בזיהוי מוקדם של כשלים, כתיבת קוד נקי ותחזוקתי, ושיפור מתמיד של איכות המוצר.
+          </p>
+        </div>
+        <button id="readMoreBtn" class="btn-outline">קרא עוד</button>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section card">
+        <h2>כישורים וטכנולוגיות</h2>
+        <div class="skills-grid">
+          <div class="skill-pill">Python</div>
+          <div class="skill-pill">Selenium</div>
+          <div class="skill-pill">Playwright</div>
+          <div class="skill-pill">PyTest</div>
+          <div class="skill-pill">REST API Testing</div>
+          <div class="skill-pill">CI/CD & Git</div>
+          <div class="skill-pill">Docker</div>
+          <div class="skill-pill">JSON / CSV Data Processing</div>
+          <div class="skill-pill">Postman</div>
+          <div class="skill-pill">SQL</div>
+        </div>
+      </section>
+
+      <!-- Interactive Contact Form -->
+      <section class="contact-section card">
+        <h2>יצירת קשר</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="fullName">שם מלא:</label>
+            <input type="text" id="fullName" placeholder="ישראל ישראלי" required />
+          </div>
+          <div class="form-group">
+            <label for="email">דואר אלקטרוני:</label>
+            <input type="email" id="email" placeholder="example@mail.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">הודעה:</label>
+            <textarea id="message" rows="4" placeholder="כתוב כאן את הודעתך..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">שלח הודעה</button>
+        </form>
+        <div id="formFeedback" class="form-feedback hidden"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 ישראל ישראלי. כל הזכויות שמורות.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
